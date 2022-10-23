@@ -1,0 +1,6 @@
+# ninja log v5
+196	404	6630829185772419	proiect_X_si_0.exe	5592d6f71cd8f2cb
+4	437	6873898832452727	build.ninja	bb455dc1d84a9c6a
+2	195	6630829183771957	CMakeFiles/proiect_X_si_0.dir/Xsi0.c.obj	cb6c4fe99af444d
+4	179	6873899279613613	CMakeFiles/proiect_X_si_0.dir/Xsi0.c.obj	7dfa2df345b96edb
+180	384	6873899281554050	proiect_X_si_0.exe	5592d6f71cd8f2cb
