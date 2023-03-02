@@ -145,11 +145,11 @@ char CheckWinner ( )
 
 void PrintWinnerPVC ( char *winner , char PLAYER , char COMPUTER )
 {
-    if ( *winner == PLAYER )
+    if ( winner == PLAYER )
     {
         printf ("Ai castigat\n" );
     }
-    else if ( *winner == COMPUTER )
+    else if ( winner == COMPUTER )
     {
         printf ( "Ai pierdut\n" );
     }
@@ -161,11 +161,11 @@ void PrintWinnerPVC ( char *winner , char PLAYER , char COMPUTER )
 
 void PrintWinnerPVP ( char *winner , char numep1[] , char numep2[] , char PLAYER , char COMPUTER )
 {
-    if ( *winner == PLAYER )
+    if ( winner == PLAYER )
     {
         printf ("A castigat %s \n" , numep1 );
     }
-    else if ( *winner == COMPUTER )
+    else if ( winner == COMPUTER )
     {
         printf ("A castigat %s \n" , numep2 );
     }
@@ -271,7 +271,7 @@ void PXVC0 ( char PLAYER , char COMPUTER )
 {
     char winner = ' ' ;
     ResetBoard ( );
-    while ( winner == ' ' && CheckFreeSpaces ( ) )
+    while ( winner == ' ' && CheckFreeSpaces ( ) > 0)
     {
         PrintBoard ( );
         PlayerMove ( PLAYER );
@@ -414,7 +414,7 @@ int main ()
     while ( playag == 1 )
     {
         char pm[10] = " ";
-        char pa[10];
+        char pa[10] = " ";
         while ( playmode ( pm ) == -1)
         {
             printf ( "Modurile disponibile de joc sunt PVP (Player Vs Player) si PVC (Player Vs Computer) \n" );
